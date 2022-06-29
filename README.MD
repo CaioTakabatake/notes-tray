@@ -25,15 +25,15 @@
 <hr>
 
 ## Tray
-- Add Note<br>
-<img src="preview/add-note.png" width="200px">
-- Open Menu<br>
-<img src="preview/menu.png" width="600px">
-- First Note > View note > Remove note
-- Second note > View note > Remove note
-- Third note > View note > Remove note
-- Fourth Note > View note > Remove note
-- Fifth Note > View note > Remove note
+- Add Note<br> <img src="preview/add-note.png" width="200px">
+- Open Menu<br> <img src="preview/menu.png" width="600px">
+---
+- First Note<br> > View note<br> > Remove note
+- Second note<br> > View note<br> > Remove note
+- Third note<br> > View note<br> > Remove note
+- Fourth Note<br> > View note<br> > Remove note
+- Fifth Note<br> > View note<br> > Remove note
+---
 - Quit
 
 
