@@ -46,7 +46,7 @@ const render = async (tray) => {
 
   const contextMenu = new Menu.buildFromTemplate([
     {
-      label: 'Adicionar Nota',
+      label: 'Add Note',
       type: 'normal',
       click: async () => {
         if (!addNote) {
@@ -57,7 +57,7 @@ const render = async (tray) => {
       }
     },
     {
-      label: 'Abrir Menu',
+      label: 'Open Menu',
       type: 'normal',
       click: async () => {
         if (!win) {
