@@ -12,6 +12,13 @@ body {
   background: #1f1f1f;
 }
 
+.wrapper {
+  margin: 50px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, 265px);
+}
+
 .wrapper li {
   height: 470px;
   width: 100%;
@@ -22,14 +29,37 @@ body {
   box-shadow: 0 4px 8px rgb(116, 113, 113);
 }
 
-
 .add-box,
+.icon,
 .bottom-content,
 .popup,
-.menu li {
+header,
+.settings .menu li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.add-box {
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add-box .icon {
+  height: 78px;
+  width: 78px;
+  color: white;
+  font-size: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  border: 2px dashed #ffffff;
+}
+
+.add-box p {
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .note {
@@ -39,30 +69,8 @@ body {
 }
 
 .note .details {
-  max-height: 100%;
+  max-height: 165px;
   overflow-y: auto;
-}
-
-.note .details::-webkit-scrollbar,
-.popup textarea::-webkit-scrollbar {
-  width: 0;
-}
-
-.note .details:hover::-webkit-scrollbar,
-.popup textarea:hover::-webkit-scrollbar {
-  width: 5px;
-}
-
-.note .details:hover::-webkit-scrollbar-track,
-.popup textarea:hover::-webkit-scrollbar-track {
-  background: rgb(48, 48, 48);
-  border-radius: 25px;
-}
-
-.note .details:hover::-webkit-scrollbar-thumb,
-.popup textarea:hover::-webkit-scrollbar-thumb {
-  background: rgb(34, 34, 34);
-  border-radius: 25px;
 }
 
 .note p {
@@ -92,32 +100,7 @@ body {
   transition: transform 0.2s ease;
 }
 
-.settings.show .menu {
-  transform: scale(1);
-}
 
-.settings .menu li {
-  height: 25px;
-  font-size: 16px;
-  margin-bottom: 2px;
-  padding: 17px 15px;
-  cursor: pointer;
-  box-shadow: none;
-  border-radius: 0;
-  justify-content: flex-start;
-}
-
-.menu li:last-child {
-  margin-bottom: 0;
-}
-
-.menu li:hover {
-  background: #f5f5f5;
-}
-
-.menu li i {
-  padding-right: 8px;
-}
 
 button {
   width: 100%;
