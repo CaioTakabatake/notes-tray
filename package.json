@@ -1,9 +1,13 @@
 {
   "name": "notes-tray",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "license": "MIT",
   "dependencies": {
-    "electron": "^19.0.6"
+    "electron": "^19.0.6",
+    "jsonfile-promised": "^0.0.1"
+  },
+  "scripts": {
+    "start": "electron ."
   }
 }
