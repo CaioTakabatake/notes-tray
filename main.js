@@ -17,7 +17,7 @@ const render = async (tray) => {
       type: 'submenu',
       submenu: [
         {
-          label: 'Visualizar nota',
+          label: 'View note',
           type: 'normal',
           click: () => {
             if (!view) {
@@ -31,7 +31,7 @@ const render = async (tray) => {
           }
         },
         {
-          label: 'Remover nota',
+          label: 'Remove note',
           type: 'normal',
           click: () => {
             dataNotes.splice(id, 1);
