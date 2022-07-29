@@ -1,14 +1,11 @@
-const jsonfile = require('jsonfile-promised');
+const Store = require('electron-store');
 
 module.exports = {
+    store: new Store(),
     getAllNote() {
-        const pathJson = `${__dirname}/notes.json`;
-        return jsonfile.readFile(pathJson);
+        return this.store.get('dataNotes');
     },
     update(notes) {
-        const pathJson = `${__dirname}/notes.json`;
-        jsonfile.readFile(pathJson).then(async file => {
-            jsonfile.writeFile(pathJson, notes);
-        });
+        this.store.set('dataNotes', notes);
     }
 }
