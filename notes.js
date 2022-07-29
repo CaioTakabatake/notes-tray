@@ -3,7 +3,9 @@ const Store = require('electron-store');
 module.exports = {
     store: new Store(),
     getAllNote() {
-        return this.store.get('dataNotes');
+        const data = this.store.get('dataNotes');
+        if (!data) return [];
+        return data
     },
     update(notes) {
         this.store.set('dataNotes', notes);
