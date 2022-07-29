@@ -21,13 +21,10 @@ const render = async (tray) => {
           type: 'normal',
           click: () => {
             if (!view) {
-              view = new BrowserWindow({ width: 400, height: 500, frame: false, resizable: true, webPreferences: { additionalArguments: [id.toString()], nodeIntegration: true, contextIsolation: false } })
+              view = new BrowserWindow({ width: 400, height: 500, frame: false, resizable: true, webPreferences: { additionalArguments: [`--note-id=${id.toString()}`], nodeIntegration: true, contextIsolation: false } })
               view.loadFile('window/view/index.html');
               view.on('closed', () => { view = ''; });
             }
-
-            // spawn('code', [e.path], { shell: true });
-            // new Notification({ title: 'PROJETO ABERTO', body: `O PROJETO ${e.name} ESTÁ SENDO ABERTO!`, icon: resolve(__dirname, 'assets', 'notification.png') }).show()
           }
         },
         {
