@@ -4,16 +4,15 @@
   "version": "1.0.0",
   "description": "<h1 align=\"center\">NotesTray</h1>\r <div align=\"center\">",
   "main": "main.js",
-  "dependencies": {
-    "jsonfile-promised": "^0.0.1"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder"
   },
   "devDependencies": {
     "electron": "^19.0.6",
-    "electron-builder": "^23.1.0"
+    "electron-builder": "^23.1.0",
+    "electron-store": "^8.0.2"
   },
   "build": {
     "appId": "com.notes.app",
