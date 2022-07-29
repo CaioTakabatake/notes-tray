@@ -18,13 +18,12 @@
   "build": {
     "appId": "com.notes.app",
     "productName": "Notes Tray",
-    "target": "NSIS",
-    "directory": {
+    "directories": {
       "output": "build"
     },
-    "nsis": {
-      "allowToChangeInstallationDirectory": true,
-      "oneClick": false
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "NSIS"
     }
   },
   "repository": {
