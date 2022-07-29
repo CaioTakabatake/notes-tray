@@ -17,7 +17,7 @@
   },
   "build": {
     "appId": "com.notes.app",
-    "poductName": "Notes Tray",
+    "productName": "Notes Tray",
     "target": "NSIS",
     "directory": {
       "output": "build"
