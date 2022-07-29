@@ -2,3 +2,4 @@ node_modules
 yarn.lock
 .vscode
 notes-tray-linux-x64
+build
