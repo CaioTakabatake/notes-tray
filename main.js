@@ -9,7 +9,7 @@ let view;
 
 const render = async (tray) => {
   let notes = [];
-  const dataNotes = await notesJson.getAllNote();
+  const dataNotes = notesJson.getAllNote();
 
   dataNotes.map((note, id) => {
     notes.push({
