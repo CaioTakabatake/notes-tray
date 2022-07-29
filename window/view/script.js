@@ -2,7 +2,7 @@ const notesJson = require('../../notes');
 const { ipcRenderer } = require('electron');
 const addBox = document.querySelector(".add-box");
 
-const noteId = Number(window.process.argv[window.process.argv.length - 1]);
+const noteId = Number(window.process.argv.filter(arg => arg.includes('--note-id='))[0].replace('--note-id=', ''))
 
 const global = async () => {
     const notes = await notesJson.getAllNote();
