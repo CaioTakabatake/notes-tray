@@ -5,7 +5,7 @@ module.exports = {
     getAllNote() {
         const data = this.store.get('dataNotes');
         if (!data) return [];
-        return data
+        return data;
     },
     update(notes) {
         this.store.set('dataNotes', notes);
